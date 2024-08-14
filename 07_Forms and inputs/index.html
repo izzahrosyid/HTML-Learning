@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Izzah Rosyid">
+        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML">
+        <title>My First Web Page</title>
+        <link rel="icon" href="html5.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Just Planning</h1>
+
+            <nav aria-label="primary-navigation"> <!--navigation area-->
+                <ul> <!--unorder list-->
+                    <li> <!--list item-->
+                        <a href="#html">Learn HTML</a> <!--link-->
+                    </li>
+                    <li>
+                        <a href="#holiday">Planning Holiday</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+        <main>
+            <article id="html">
+                <h2>I'm Ready to Learn HTML</h2>
+                <p>Hi, This is my first web page.</p>
+                <section>
+                    <h3>HTML5</h3>
+                    <img src="img/BigBrain.jpeg" alt="BigBrain" title="Im learning HTML5" width="300" height="168">
+                    <figure>
+                        <figcaption>An Example of HTML5 Code</figcaption>
+                        <p>
+                            <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+                        </p>
+                    </figure>
+                </section>
+
+                <section>
+                    <h3>My Daily Schedule</h3>
+                    <p>lemme tell u how...</p>
+                        <ol>
+                        <li>...I learn about web dev </li>
+                        <li>...I plan out my Schedule </li>
+                        <li>...I use resources from <abbr title="youtube">
+                            <a href="https://www.youtube.com/watch?v=mJgBOIoGihA">YT</a> </abbr> </li>
+                        </ol>
+                    <aside>
+                        <details>
+                            <summary>Guess the <mark> number of hours</mark> I sleep per day</summary>
+                            <p>I start at <time datetime="02:00">2 am</time> and I sleep for <time datetime="PT2H">2 hour</time> and sleep again every morning</p>
+                        </details>
+                    </aside>
+                    <br>
+                    <table>
+                        <caption>My daily Schedule</caption>
+                        <thead>
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Activity</th>
+                            </tr>   
+                        </thead>
+                        <tbody>
+                            <tr><!--table row-->
+                                <th scope="row">Morning</th>
+                                <td><!--table data-->
+                                    <time datetime="02:00">2am</time>-<time datetime="10:00">10am</time>
+                                </td>
+                                <td>Sleep</td>
+                            </tr>
+                            <tr><!--table row-->
+                                <th scope="row">Study</th>
+                                <td><!--table data-->
+                                    <time datetime="12:00">12pm</time>-<time datetime="01:00">1pm</time>
+                                </td>
+                                <td>Write Code</td>
+                            </tr>
+                            <tr><!--table row-->
+                                <th scope="row">Sleep again</th>
+                                <td><!--table data-->
+                                    <time datetime="02:00">2pm</time>-<time datetime="16:00">4pm</time>
+                                </td>
+                                <td>Take a nap</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Evening</th>
+                                <td rowspan="2">All Other Times</td>
+                                <td>Playing</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Night</th>
+                                <td>Eat</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">And thats what I do every day, just sleep eat and code</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+            </article>
+
+            <hr>
+
+            <!-- br*150
+            insert 150 line break-->
+
+            <article id="holiday">
+                    <h2>I'm Also planning a holiday</h2>
+                        <ul>
+                            <li>
+                                <p>Setiap hari adalah <abbr title="hari libur">holiday</abbr></p>
+                                <figure>
+                                    <img src="img/shrek.jpeg" alt="shrek" title="I want Holiday" 
+                                    width="275" height="183" loading="lazy"> 
+                                    <!--lazy loading that means the browser will only load that image when it knows its about to show it when we start to scroll-->
+                                    <figcaption>
+                                        Sherk want holiday
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li>
+                                <p>Ah entah lah, <em>terserah pokok ini buat paragraf</em></p>
+                            </li>
+                            <li>
+                                <p>Ini cuma alamat random</p>
+                                    <address>
+                                        Jl. Setail No.1, Darmo, Kec. Wonokromo <br>
+                                        Surabaya, Jawa Timur 60241 <br>
+                                    </address>
+                                    <figure>
+                                        <img src="img/confused.jpeg" alt="confused" title="R U lied?" width="242" height="208" loading="lazy">
+                                        <figcaption>Are u sure thats a random address</figcaption>
+                                    </figure>
+                            </li>
+                        </ul>
+
+                <section>
+                    <!-- ini adalah komen, jadi gaakan keliatan ditampilan-->
+                    <h3>Aku mencoba untuk bangkit dari gaya magnet kasur</h3>
+                        <dl>
+                            <dt>dunia mimpi</dt>
+                            <dd>ya cuma mimpi doang</dd>
+
+                            <dt>real life</dt>
+                            <dd>dunia yang kamu pijak sekarang</dd>
+                        </dl>
+                        <p>Biar ga keliatan banget klo jadi <strong>pengangguran</strong></p>
+                </section>
+            </article>
+
+            <hr>
+
+            <article id="Contact">
+                <h2>Contact Me</h2>
+                <p>I'd realyy like to hear from you!</p>
+
+                <form action="http://httpbin.org/get" method="get">
+                    <p>
+                        <label for="FirstName">First Name:</label>
+                        <input type="text" name="FirstName" id="FirstName" placeholder="Budi" autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="LastName">Last Name:</label>
+                        <input type="text" name="LastName" id="LastName" placeholder="Setiawan" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Your secret" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </p>
+                    <p>
+                        <label for="decade">Favorite decade:</label>
+                        <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+                    </p>
+                    <p>
+                        <label for="coffee">Favorite Coffee:</label>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="Coffees">
+                                <option value="regular coffee">Regular coffee</option>
+                                <option value="iced coffee">Iced Coffee</option>
+                            </optgroup>
+                            <optgroup label="Espesso Drinks">
+                                <option value="latte">Latte</option>
+                                <option value="cappuccino">Cappucinno</option>
+                                <option value="cortado">Cortado</option>
+                                <option value="americano">Americano</option>
+                            </optgroup>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <!-- <p>
+                        <label for="coffee">Favorite Coffee:</label>
+                        <input type="text" name="coffee" id="coffee" list="coffee-list">
+                        <datalist id="coffee-list">
+                            <option value="regular coffee">
+                            <option value="iced coffee">
+                            <optgroup label="Espesso Drinks">
+                            <option value="latte">
+                            <option value="cappuccino">
+                            <option value="cortado">
+                            <option value="americano">
+                            <option value="other">
+                        </datalist>
+                    </p> -->
+                </form>
+            </article>
+        </main>
+
+        <hr>
+        <footer>
+            <p>
+                &lt;&lt;&lt; &copy; <a href="about.html">Rosyid</a>  &gt;&gt;&gt;
+            </p>
+                <p>
+                <a href="#">Back to top</a>
+            </p>
+        </footer>
+    </body>
+</html>
