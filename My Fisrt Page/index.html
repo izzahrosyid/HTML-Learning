@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="author" content="Izzah Rosyid">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML">
     <title>My First Page</title>
  
     <!-- CSS Code -->
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/app.css">
 
     <!-- For SNS -->
     <link
@@ -15,41 +18,43 @@
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
+    >
  
   </head>
   <body>
     <header class="navbar-container">
       <div class="logo">
-        <img src="img/TulisMe.png" alt="Hi, It's me />
+        <img src="img/TulisMe.png" alt="Hi, It's me" >
       </div>
       <nav class="nav-list">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Project</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
  
     <main>
-      <div class="content">
-        <div class="content-description">
-          <h1 class="title">Izzah Rosyidah</h1>
-          <p>
-            An enthusiastic and communicative Electrical Engineering undergraduate with a passion for learning and taking on new challenges. Actively involved in developing innovative solutions, including a hydroponic tool system for plant nutrient detection. Interested in further enhancing my skills in power engineering, electronics, instrumentation, embedded systems, and automation engineering.
-          </p>
- 
-          <button>Lebih lanjut</button>
+      <article id="home">
+        <div class="content">
+          <div class="content-description">
+            <h1 class="title">Izzah Rosyidah</h1>
+            <p>
+              An enthusiastic and communicative Electrical Engineering undergraduate with a passion for learning and taking on new challenges. Actively involved in developing innovative solutions, including a hydroponic tool system for plant nutrient detection. Interested in further enhancing my skills in power engineering, electronics, instrumentation, embedded systems, and automation engineering.
+            </p>
+  
+            <button>Lebih lanjut</button>
+          </div>
+  
+          <div class="content-image">
+            <img src="img/me.png" alt="My Name is Rosyi">
+          </div>
         </div>
- 
-        <div class="content-image">
-          <img src="img/me.jpg" alt="My Name is Rosyi" />
-        </div>
-      </div>
- 
+      </article>
+
       <aside>
         <div class="social-media">
           <ul>
@@ -66,8 +71,19 @@
               <a href="#"><i class="fab fa-youtube"></i></a>
             </li>
           </ul>
+          <p>Kota Pahlawan</p>
+          <figure>
+            <img src="img/surabaya.png" width="200" >
+            <figcaption>Icon Surabaya</figcaption>
+          </figure>
         </div>
       </aside>
     </main>
+
+    <footer>
+      <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Rosyi</a>  &gt;&gt;&gt;
+      </p>
+    </footer>
   </body>
 </html>
